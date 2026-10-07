@@ -34,6 +34,7 @@ export const couple = {
   proposalUrl: "/images/proposal-stage.png",
   cardRefUrl: "/images/reception-card.png",
   ogImageUrl: "/og-image.png",
+  bgmUrl: "/audio/bgm.mp3",
 };
 
 export const events: WeddingEvent[] = [

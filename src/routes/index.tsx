@@ -10,6 +10,7 @@ import { VenueSection } from "@/components/wedding/VenueSection";
 import { WishLantern } from "@/components/wedding/WishLantern";
 import { WeddingFooter } from "@/components/wedding/WeddingFooter";
 import { InvitationOpener } from "@/components/wedding/InvitationOpener";
+import { BackgroundMusic } from "@/components/wedding/BackgroundMusic";
 import { couple } from "@/lib/wedding";
 
 export const Route = createFileRoute("/")({
@@ -61,6 +62,9 @@ export const Route = createFileRoute("/")({
 function InvitationPage() {
   return (
     <main className="paper overflow-x-hidden min-h-screen text-[#2c241d] selection:bg-[#d4af37]/30">
+      {/* Background Music Player (Kesariya Instrumental Loop) */}
+      <BackgroundMusic />
+
       {/* Royal Seal Curtain Opener */}
       <InvitationOpener />
 

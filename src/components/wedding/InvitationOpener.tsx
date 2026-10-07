@@ -20,6 +20,7 @@ export function InvitationOpener() {
   function handleOpen() {
     setIsAnimating(true);
     sessionStorage.setItem(SESSION_KEY, "true");
+    window.dispatchEvent(new CustomEvent("play-wedding-music"));
     setTimeout(() => {
       setOpened(true);
       document.body.style.overflow = "";
