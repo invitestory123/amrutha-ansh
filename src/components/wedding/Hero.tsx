@@ -98,7 +98,18 @@ export function Hero() {
             </div>
           </div>
 
-          <p className="mt-4 text-[0.62rem] uppercase tracking-widest text-[#8c6f37]/80">
+          <div className="mt-3 flex justify-center">
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("replay-wedding-opener"))}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#fbf5e7]/90 hover:bg-[#f5e9ce] border border-[#d4af37]/60 text-xs font-serif text-[#7a5c1a] shadow-xs transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              <Sparkles className="h-3.5 w-3.5 text-[#b8860b]" />
+              <span>Replay Entry Video</span>
+            </button>
+          </div>
+
+          <p className="mt-3 text-[0.62rem] uppercase tracking-widest text-[#8c6f37]/80">
             Tap anywhere to shower rose petals
           </p>
         </div>
